@@ -18,7 +18,7 @@ When you upgrade by using Windows Update from the **Settings** dialog, you can p
 
 To learn more about how to manage the offer of feature updates, see [Manage feature updates with Group Policy on Windows Server](manage-feature-updates-group-policy.md).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -28,13 +28,13 @@ To learn more about how to manage the offer of feature updates, see [Manage feat
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Only for use as NPS. This has not been vetted for anything other than for use with the NPS servers. Wider Use and for use as DCs will need to be checked. This is however a handy feature for intiating an implace upgrade
----
+
 
 ### In-place upgrade from Windows Server 2012 R2
 
 With Windows Server 2025, you can upgrade up to four versions at a time. You can upgrade directly to Windows Server 2025 from Windows Server 2012 R2 and later.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -44,7 +44,7 @@ With Windows Server 2025, you can upgrade up to four versions at a time. You can
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Just a feature clarification. No risk
----
+
 
 ### Desktop shell
 
@@ -75,12 +75,12 @@ You can now connect mice, keyboards, headsets, audio devices, and more via Bluet
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This may present a security risk depending on whether we are allowing the connection of the physical hardware to the physical server. Not really relevant for our usecase where the server sits in a datacenter and will likely have bluetooth disabled.
----
+
 
 
 ### DTrace
 Windows Server 2025 comes equipped with `dtrace` as a native tool. DTrace is a command-line utility that enables users to monitor and troubleshoot their system's performance in real time. With DTrace, you can dynamically instrument both the kernel and user-space code without any need to modify the code itself. This versatile tool supports a range of data collection and analysis techniques, such as aggregations, histograms, and tracing of user-level events. To learn more, see [DTrace](/windows-server/administration/windows-commands/dtrace) for command-line help and [DTrace on Windows](/windows-hardware/drivers/devtest/dtrace) for other capabilities.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -103,7 +103,7 @@ You can now add the following types of accounts in Windows **Settings** under **
 - Work or school account
 
 Domain join is still required for most situations.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -113,7 +113,7 @@ Domain join is still required for most situations.
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This shouldn't impact functionality.
----
+
 
 
 ### Feedback Hub
@@ -129,13 +129,13 @@ To submit feedback or report problems that you encounter when you use Windows Se
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Feedback Portal used for communicating issues / frustrations with microsoft to do with Windows Server 2025
----
+
 
 
 ### File compression
 
 Windows Server 2025 has a new compression feature. To compress an item, right-click and select **Compress to**. This feature supports **ZIP**, **7z**, and **TAR** compression formats with specific compression methods for each one.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -145,7 +145,7 @@ Windows Server 2025 has a new compression feature. To compress an item, right-cl
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is a feature addition that has no risk.
----
+
 
 
 ### Pinned apps
