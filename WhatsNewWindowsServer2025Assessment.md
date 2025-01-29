@@ -50,7 +50,7 @@ With Windows Server 2025, you can upgrade up to four versions at a time. You can
 
 When you sign in for the first time, the desktop shell experience conforms to the style and appearance of Windows 11.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -60,7 +60,7 @@ When you sign in for the first time, the desktop shell experience conforms to th
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Just a feature clarification. No Risk
----
+
 
 
 ### Bluetooth
@@ -79,6 +79,7 @@ You can now connect mice, keyboards, headsets, audio devices, and more via Bluet
 
 
 ### DTrace
+
 Windows Server 2025 comes equipped with `dtrace` as a native tool. DTrace is a command-line utility that enables users to monitor and troubleshoot their system's performance in real time. With DTrace, you can dynamically instrument both the kernel and user-space code without any need to modify the code itself. This versatile tool supports a range of data collection and analysis techniques, such as aggregations, histograms, and tracing of user-level events. To learn more, see [DTrace](/windows-server/administration/windows-commands/dtrace) for command-line help and [DTrace on Windows](/windows-hardware/drivers/devtest/dtrace) for other capabilities.
 
 | What to Check         | Checked |
@@ -91,7 +92,7 @@ Windows Server 2025 comes equipped with `dtrace` as a native tool. DTrace is a c
 | WiderUse.No.Risk:     | N       |
 | Notes: | System function investigation tool.
 
----
+
 
 
 ### Email and accounts
@@ -119,7 +120,7 @@ Domain join is still required for most situations.
 ### Feedback Hub
 
 To submit feedback or report problems that you encounter when you use Windows Server 2025, use the Windows Feedback Hub. Include screenshots or recordings of the process that caused the issue to help us understand your situation and share suggestions to enhance your Windows experience. To learn more, see [Explore the Feedback Hub](/windows-insider/feedback-hub/feedback-hub-app).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -161,7 +162,7 @@ Pinning your most-used apps is now available through the **Start** menu and is c
 - Terminal
 - Windows PowerShell
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -171,13 +172,13 @@ Pinning your most-used apps is now available through the **Start** menu and is c
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is a default behaviour description. Specifically with icon avaliability in the start menu. No Risk
----
+
 
 
 ### Task Manager
 
 Windows Server 2025 uses the modern Task Manager app with [Mica material](/windows/apps/design/style/mica) that conforms to the style of Windows 11.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -187,13 +188,13 @@ Windows Server 2025 uses the modern Task Manager app with [Mica material](/windo
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is a UI modification. No Risk.
----
+
 
 
 ### Wi-Fi
 
 It's now easier to enable wireless capabilities because the Wireless LAN Service feature is now installed by default. The wireless startup service is set to manual. To enable it, run `net start wlansvc` in the command prompt, Windows Terminal, or PowerShell.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -203,13 +204,13 @@ It's now easier to enable wireless capabilities because the Wireless LAN Service
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This provides wireless capabilities to a server that has a wireless card previously they would no be able to properly communicate over wifi due to not have the appropriate services to drive wireless.
----
+
 
 
 ### Windows Terminal
 
 The Windows Terminal, a powerful and efficient multishell application for command-line users, is available in Windows Server 2025. Search for **Terminal** on the search bar.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -219,13 +220,13 @@ The Windows Terminal, a powerful and efficient multishell application for comman
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is a new command prompt application unifying the console interfaces for all script applications (Powershell, CMD, Ming32, Git whatever other scripting consoles that are available) and added tabing to swtich between sessions
----
+
 
 
 ### WinGet
 
 WinGet is installed by default, which is a command-line Windows Package Manager tool that provides comprehensive package manager solutions for installing applications on Windows devices. To learn more, see [Use the WinGet tool to install and manage applications](/windows/package-manager/winget).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -235,7 +236,7 @@ WinGet is installed by default, which is a command-line Windows Package Manager 
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Allows winget in the Windows SErver 2025 environment.
----
+
 
 
 ## Advanced multilayer security
@@ -248,7 +249,7 @@ Hotpatch is now available for Windows Server 2025 machines connected to Azure Ar
 
 > [!IMPORTANT]
 > Azure Arc-enabled Hotpatch is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -258,13 +259,13 @@ Hotpatch is now available for Windows Server 2025 machines connected to Azure Ar
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use and we do not use Azure Arc. Testing is still required for when the Hotpatch goes mainstream. There are some risks with this feature however this will also hit other version of windows server (2022)
----
+
 
 
 ### Credential Guard
 
 Starting with Windows Server 2025, Credential Guard is now enabled by default on devices that meet the requirements. For more information about Credential Guard, see [Configure Credential Guard](/windows/security/identity-protection/credential-guard/configure).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -274,7 +275,7 @@ Starting with Windows Server 2025, Credential Guard is now enabled by default on
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | For the use with deploying the NPS there is no risk and is in fact something we want for additional security. Shouldn't interfere with NPS or touch anything in the environemnt.
----
+
 
 
 ### Active Directory Domain Services
@@ -285,7 +286,7 @@ The latest enhancements to Active Directory Domain Services (AD DS) and Active D
 
   You can install new domain controllers (DCs) with a 32k-page database that uses 64-bit Long Value IDs (LIDs) and run in 8k-page mode for compatibility with previous versions. An upgraded DC continues to use its current database format and 8k pages. Moving to a 32k-page database is done on a forestwide basis and requires that all DCs in the forest have a 32k-page capable database.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -295,7 +296,7 @@ The latest enhancements to Active Directory Domain Services (AD DS) and Active D
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This presents a risk for Active Directory and will need to be vetted and tested for DC or Wider use. However there are controls in place and the default behavior is not an automatic upgraded if doing an inplace upgrade on DC. This is not relevant to an NPS Deployment.
----
+
 
 
 - **Active Directory schema updates**: Three new log database files are introduced that extend the Active Directory schema: `sch89.ldf`, `sch90.ldf`, and `sch91.ldf`. The AD LDS equivalent schema updates are in `MS-ADAM-Upgrade3.ldf`. To learn more about previous schema updates, see [Windows Server Active Directory schema updates](../identity/ad-ds/deploy/Schema-Updates.md).
@@ -303,7 +304,7 @@ The latest enhancements to Active Directory Domain Services (AD DS) and Active D
 - **Channel binding audit support**: You can now enable events 3074 and 3075 for Lightweight Directory Access Protocol (LDAP) channel binding. When the channel binding policy is modified to a more secure setting, an administrator can identify devices in the environment that don't support or fail channel binding. These audit events are also available in Windows Server 2022 and later via [KB4520412](https://support.microsoft.com/topic/2020-2023-and-2024-ldap-channel-binding-and-ldap-signing-requirements-for-windows-kb4520412-ef185fb8-00f7-167d-744c-f299a66fc00a).
 - **DC-location algorithm improvements**: The DC discovery algorithm provides new functionality with improvements to mapping of short NetBIOS-style domain names to DNS-style domain names. To learn more, see [Locating domain controllers in Windows and Windows Server](../identity/ad-ds/manage/dc-locator.md).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
@@ -313,7 +314,7 @@ The latest enhancements to Active Directory Domain Services (AD DS) and Active D
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | If viewing an older AD from the a 2025 machine it may flag as requiring a repair for AD objects. Administrators should not "repair" the object. Specifically "Enterprise administrators can now repair objects with the missing core attributes `SamAccountType` and `ObjectCategory`. Enterprise administrators can reset the `LastLogonTimeStamp` attribute on an object to the current time." This should not be done on a 2025 machine.
----
+
 
   > [!NOTE]
   > Windows doesn't use mailslots during DC discovery operations because Microsoft has announced the [deprecation of WINS and mailslots](https://techcommunity.microsoft.com/t5/storage-at-microsoft/the-beginning-of-the-end-of-remote-mailslots-as-part-of-windows/ba-p/3762048) for these legacy technologies.
@@ -366,7 +367,7 @@ The latest enhancements to Active Directory Domain Services (AD DS) and Active D
 
 - **Replication priority order**: Administrators can now increase the system-calculated replication priority with a particular replication partner for a particular naming context. This feature allows more flexibility in configuring the replication order to address specific scenarios.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -376,14 +377,14 @@ The latest enhancements to Active Directory Domain Services (AD DS) and Active D
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | These are all only relevant to a deployment involving upgrading or deploying an Server instance for AD.
----
+
 
 
 
 #### Delegated Managed Service Account
 
 This new type of account enables migration from a service account to a delegated Managed Service Account (dMSA). This account type comes with managed and fully randomized keys to ensure minimal application changes while the original service account passwords are disabled. To learn more, see [Delegated Managed Service Accounts overview](../identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-overview.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -393,7 +394,7 @@ This new type of account enables migration from a service account to a delegated
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is a security enhancement that has to be used for it to effect us.
----
+
 
 
 ### Windows Local Administrator Password Solution
@@ -440,7 +441,7 @@ Several features new to Microsoft LAPS introduce the following improvements:
   The expansion of logging events during the execution of PAA provides deeper insights into the operation.
 
 To learn more about Windows LAPS, see [What is Windows LAPS?](/windows-server/identity/laps/laps-overview).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
@@ -450,13 +451,13 @@ To learn more about Windows LAPS, see [What is Windows LAPS?](/windows-server/id
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Need to test if the new Group Policy setting seeds to DC when access from Server 2025.
----
+
 
 
 ### OpenSSH
 
 In earlier versions of Windows Server, the OpenSSH connectivity tool required manual installation before use. The OpenSSH server-side component is installed by default in Windows Server 2025. The Server Manager UI also includes a one-step option under **Remote SSH Access** that enables or disables the `sshd.exe` service. Also, you can add users to the **OpenSSH Users** group to allow or restrict access to your devices. To learn more, see [OpenSSH for Windows overview](/windows-server/administration/openssh/openssh_overview).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -466,13 +467,13 @@ In earlier versions of Windows Server, the OpenSSH connectivity tool required ma
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is an additional feature adding a service in the default install. It presents no risk as it needs to be manually enabled; it is installed but not enabled unless Remote SSH Access has been enabled.
----
+
 
 
 ### Security baseline
 
 By implementing a customized security baseline, you can establish security measures right from the beginning for your device or VM role based on the recommended security posture. This baseline comes equipped with more than 350 preconfigured Windows security settings. You can use the settings to apply and enforce specific security settings that align with the best practices recommended by Microsoft and industry standards. To learn more, see [OSConfig overview](../security/osconfig/osconfig-overview.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
@@ -482,7 +483,7 @@ By implementing a customized security baseline, you can establish security measu
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. This shouldn't effect any other machines and shouldn't interfere unless we enable it. 
----
+
 
 
 ### Virtualization-based security enclaves
@@ -491,7 +492,7 @@ A virtualization-based security (VBS) enclave is a software-based trusted execut
 
 VBS enclaves enable applications to protect their secrets by removing the need to trust admins and hardening against malicious attackers. For more information, read the [VBS enclaves Win32 reference](/windows/win32/trusted-execution/vbs-enclaves).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -501,7 +502,7 @@ VBS enclaves enable applications to protect their secrets by removing the need t
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This will need to be confirmed to be compatible for Wider Use - this shouldn't effect or present risk for neither an NPS deploy nor a DC.
----
+
 
 
 
@@ -512,7 +513,7 @@ VBS key protection enables Windows developers to secure cryptographic keys by us
 When in use, VBS keys are isolated in a secure process. Key operations can occur without exposing the private key material outside of this space. At rest, a TPM key encrypts private key material, which binds VBS keys to the device. Keys protected in this way can't be dumped from process memory or exported in plain text from a user's machine.
 
 VBS key protection helps prevent exfiltration attacks by any admin-level attacker. VBS must be enabled to use key protection. For information about how to enable VBS, see [Enable memory integrity](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -522,7 +523,7 @@ VBS key protection helps prevent exfiltration attacks by any admin-level attacke
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is a security feature that is part of Virtualized based security 
----
+
 
 
 
@@ -533,7 +534,7 @@ The following sections discuss security for connections.
 #### Secure certificate management
 
 Searching or retrieving certificates on Windows now supports SHA-256 hashes, as described in the functions [CertFindCertificateInStore](/windows/win32/api/wincrypt/nf-wincrypt-certfindcertificateinstore) and [CertGetCertificateContextProperty](/windows/win32/api/wincrypt/nf-wincrypt-certgetcertificatecontextproperty). TLS server authentication is more secure across Windows and now requires a minimum RSA key length of 2,048 bits. For more information, read [TLS server authentication: Deprecation of weak RSA certificates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-server-authentication-deprecation-of-weak-rsa-certificates/ba-p/4134028).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -544,13 +545,13 @@ Searching or retrieving certificates on Windows now supports SHA-256 hashes, as 
 | WiderUse.No.Risk:     | N       |
 | Notes: | This will only effect us if we have any certificates in the wild that are under 2048 bit (I don't think this is the case but needs to be confirmed.)Ultimately this is a enforcement of deprecation and we shouldn't have anything that presents a problem. Under an NPS deployment context this should present no problems.
 CONFIRMATION: Y/N
----
+
 
 
 #### SMB over QUIC
 
 The [SMB over QUIC](../storage/file-server/smb-over-quic.md) server feature, which was only available in Windows Server Azure Edition, is now available in both Windows Server Standard and Windows Server Datacenter versions. SMB over QUIC adds the benefits of the QUIC, which provides low-latency, encrypted connections over the internet.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -560,7 +561,7 @@ The [SMB over QUIC](../storage/file-server/smb-over-quic.md) server feature, whi
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This can be disabled specific the QUIC feature. under a NPS dployment context SMB shouldn't be enabled.
----
+
 
 
 
@@ -576,7 +577,7 @@ To disable SMB over QUIC by using PowerShell, run this command in an elevated Po
 ```powershell
 Set-SmbClientConfiguration -EnableSMBQUIC $false
 ```
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -586,7 +587,7 @@ Set-SmbClientConfiguration -EnableSMBQUIC $false
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ##### SMB signing and encryption auditing
@@ -617,7 +618,7 @@ Event logs for these changes are stored in the following Event Viewer paths with
 |Applications and Services Logs\Microsoft\Windows\SMBClient\Audit|31998 <br> 31999|
 |Applications and Services Logs\Microsoft\Windows\SMBServer\Audit|3021 <br> 3022|
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -627,7 +628,7 @@ Event logs for these changes are stored in the following Event Viewer paths with
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This shouldn't be relevant for NPS deployment but will definitely need to be vetted under a DC and Wider Use context
----
+
 
 
 ##### SMB over QUIC auditing
@@ -639,7 +640,7 @@ SMB over QUIC client connection auditing captures events that are written to an 
 |Applications and Services Logs\Microsoft\Windows\SMBClient\Connectivity|30832|
 |Applications and Services Logs\Microsoft\Windows\SMBServer\Connectivity|1913|
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -649,14 +650,14 @@ SMB over QUIC client connection auditing captures events that are written to an 
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is for capturing event to do with QUIC if it isn't enabled then this is irrelevant.
----
+
 
 
 ##### SMB over QUIC client access control
 
 Windows Server 2025 includes client access control for SMB over QUIC. SMB over QUIC is an alternative to TCP and RDMA that supplies secure connectivity to edge file servers over untrusted networks. Client access control introduces more controls to restrict access to your data by using certificates. To learn more, see [How client access control works](../storage/file-server/configure-smb-over-quic-client-access-control.md#how-client-access-control-works).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -666,14 +667,14 @@ Windows Server 2025 includes client access control for SMB over QUIC. SMB over Q
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | this is a security control. QUIC needs to be enabled.
----
+
 
 
 #### SMB alternative ports
 
 You can use the SMB client to connect to alternative TCP, QUIC, and RDMA ports instead of their IANA/IETF defaults of 445, 5445, and 443. You can configure alternative ports via Group Policy or PowerShell. Previously, the SMB server in Windows mandated inbound connections to use the IANA-registered port TCP/445 while the SMB TCP client allowed only outbound connections to that same TCP port. Now, SMB over QUIC allows for SMB alternative ports where QUIC-mandated UDP/443 ports are available for both server and client devices. To learn more, see [Configure alternative SMB ports](../storage/file-server/smb-ports.md).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -683,14 +684,14 @@ You can use the SMB client to connect to alternative TCP, QUIC, and RDMA ports i
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | SMB will recieve connections on alternate ports - shouldn't really effect functionality. Testing for Wider Use would have to be done. NPS is fine. Confirm what ports we use for SMB. 
----
+
 
 
 #### SMB firewall rule hardening
 
 Previously, when a share was created, the SMB firewall rules were automatically configured to enable the **File and Printer Sharing** group for the relevant firewall profiles. Now the creation of an SMB share in Windows results in the automatic configuration of the new **File and Printer Sharing (Restrictive)** group, which no longer permits inbound NetBIOS ports 137-139. To learn more, see [Updated firewall rules](../storage/file-server/smb-secure-traffic.md#updated-firewall-rules).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -700,14 +701,14 @@ Previously, when a share was created, the SMB firewall rules were automatically 
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | SMB Firewall doesn't permit port 137-139 by default. No Risk for NPS deployment unless we use those ports.
----
+
 
 
 #### SMB encryption
 
 [Enforce SMB encryption](../storage/file-server/smb-security.md#smb-encryption) is enabled for all outbound SMB client connections. With this update, administrators can set a mandate that all destination servers support SMB 3.x and encryption. If a server lacks these capabilities, the client is unable to establish a connection.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -717,14 +718,14 @@ Previously, when a share was created, the SMB firewall rules were automatically 
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Security feature for SMB. Enforce Encryption for all SMB. NPS zero risk. Wider Use confirmation would have to be done.
----
+
 
 
 #### SMB authentication rate limiter
 
 The SMB authentication rate limiter limits the number of authentication attempts within a certain time period. The SMB authentication rate limiter helps combat brute-force authentication attacks. The service for the SMB server uses the authentication rate limiter to implement a delay between each failed NTLM- or PKU2U-based authentication attempt. The service is enabled by default. To learn more, see [How SMB authentication rate limiter works](../storage/file-server/configure-smb-authentication-rate-limiter.md#how-smb-authentication-rate-limiter-works).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -734,14 +735,14 @@ The SMB authentication rate limiter limits the number of authentication attempts
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | Security feature for SMB. no risk
----
+
 
 
 #### Disable SMB NTLM
 
 Beginning with Windows Server 2025, the SMB client supports NTLM blocking for remote outbound connections. Previously, the Windows Simple and Protected GSSAPI Negotiation Mechanism ([SPNEGO](/openspecs/windows_protocols/ms-spng/b16309d8-4a93-4fa6-9ee2-7d84b2451c84)) negotiated Kerberos, NTLM, and other mechanisms with the destination server to determine a supported security package. To learn more, see [Block NTLM connections on SMB](../storage/file-server/smb-ntlm-blocking.md).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -751,14 +752,14 @@ Beginning with Windows Server 2025, the SMB client supports NTLM blocking for re
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | NPS deployment shouldnt' be effected. 
----
+
 
 
 #### SMB dialect control
 
 You can now [manage SMB dialects in Windows](../storage/file-server/manage-smb-dialects.md). When configured, the SMB server determines which SMB 2 and SMB 3 dialects it negotiates compared to the previous behavior and matches only the highest dialect.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -768,28 +769,30 @@ You can now [manage SMB dialects in Windows](../storage/file-server/manage-smb-d
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This is an SMB server feature not relevant to NPS. Will need to be check for DC and Wider Use Risk.
----
+
 
 
 #### SMB signing
 
 SMB signing is now required by default for all SMB outbound connections. Previously, it was required only when you connected to shares named **SYSVOL** and **NETLOGON** on Active Directory DCs. To learn more, see [How signing works](../storage/file-server/smb-signing-overview.md#how-signing-works).
 
----
-Checked.For.NPS: N
-NPS.No.Risk:N
-Checked.For.DC: N
-DC.No.Risk: N
-Checked.For.WiderUse: N
-WiderUse.No.Risk: N
+
+| What to Check         | Checked |
+| :-------------------- | ------: |
+| Checked.For.NPS:      | N       |
+| NPS.No.Risk:          | N       |
+| Checked.For.DC:       | N       |
+| DC.No.Risk:           | N       |
+| Checked.For.WiderUse: | N       |
+| WiderUse.No.Risk:     | N       |
 | Notes: | Will need to be confirmed as not a risk.
----
+
 
 #### Remote Mailslot
 
 The Remote Mailslot protocol is disabled by default for SMB and for DC Locator protocol use with Active Directory. Remote Mailslot might be removed in a later release. To learn more, see [Features we're no longer developing](../get-started/removed-deprecated-features-windows-server-2025.md#features-were-no-longer-developing).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -799,7 +802,7 @@ The Remote Mailslot protocol is disabled by default for SMB and for DC Locator p
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 #### Routing and Remote Access Services hardening
@@ -807,7 +810,7 @@ The Remote Mailslot protocol is disabled by default for SMB and for DC Locator p
 By default, new Routing and Remote Access Services (RRAS) installations don't accept VPN connections based on PPTP and L2TP. You can still enable these protocols, if necessary. VPN connections based on SSTP and IKEv2 are still accepted without any change.
 
 Existing configurations retain their behavior. For example, if you run Windows Server 2019 and accept PPTP and L2TP connections, and you upgrade to Windows Server 2025 by using an in-place upgrade, connections based on L2TP and PPTP are still accepted. This change doesn't affect Windows client operating systems. To learn more about how to reenable PPTP and L2TP, see [Configure VPN protocols](../remote/remote-access/configure-vpn-protocols.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -817,7 +820,7 @@ Existing configurations retain their behavior. For example, if you run Windows S
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | While this deals with VPN authentication it isn't relevant to the NPS. NPS deployment will be uneffected by this.
----
+
 
 
 ## Hyper-V, AI, and performance
@@ -827,7 +830,7 @@ The following sections discuss Hyper-V, AI, and performance.
 ### Accelerated Networking
 
 Accelerated Networking (AccelNet) simplifies the management of single root I/O virtualization (SR-IOV) for virtual machines (VMs) hosted on Windows Server 2025 clusters. This feature uses the high-performance SR-IOV data path to reduce latency, jitter, and CPU utilization. AccelNet also includes a management layer that handles prerequisite checking, host configuration, and VM performance settings. To learn more, see [Accelerated Networking at the Edge (preview)](/windows-server/networking/technologies/accelerated-networking/accelerated-networking).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -837,13 +840,13 @@ Accelerated Networking (AccelNet) simplifies the management of single root I/O v
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Hyper-V Manager
 
 When you create a new VM through Hyper-V Manager, **Generation 2** is now set as the default option in the **New Virtual Machine Wizard**.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -853,13 +856,13 @@ When you create a new VM through Hyper-V Manager, **Generation 2** is now set as
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Hypervisor-enforced paging translation
 
 Hypervisor-enforced paging translation (HVPT) is a security enhancement to enforce the integrity of linear address translations. HVPT protects critical system data from write-what-where attacks, where the attacker writes an arbitrary value to an arbitrary location, often as the result of a buffer overflow. HVPT guards page tables that configure critical system data structures. HVPT includes everything already secured with hypervisor-protected code integrity (HVCI). HVPT is enabled by default, where hardware support is available. HVPT isn't enabled when Windows Server runs as a guest in a VM.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -869,7 +872,7 @@ Hypervisor-enforced paging translation (HVPT) is a security enhancement to enfor
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### GPU partitioning
@@ -877,7 +880,7 @@ Hypervisor-enforced paging translation (HVPT) is a security enhancement to enfor
  You can share a physical GPU device with multiple VMs by using GPU partitioning. Instead of allocating the entire GPU to a single VM, GPU partitioning (GPU-P) assigns dedicated fractions of the GPU to each VM. With Hyper-V GPU-P high availability, a GPU-P VM is automatically enabled on another cluster node if there is unplanned downtime.
 
 GPU-P Live Migration provides a solution to move a VM (for planned downtime or load balancing) with GPU-P to another node whether it's standalone or clustered. To learn more about GPU partitioning, see [GPU partitioning](../virtualization/hyper-v/gpu-partitioning.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -887,7 +890,7 @@ GPU-P Live Migration provides a solution to move a VM (for planned downtime or l
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
@@ -896,7 +899,7 @@ GPU-P Live Migration provides a solution to move a VM (for planned downtime or l
 The dynamic processor compatibility mode is updated to take advantage of new processor capabilities in a clustered environment. Dynamic processor compatibility uses the maximum number of processor features available across all servers in a cluster. The mode improves performance compared to the previous version of processor compatibility.
 
 You can also use dynamic processor compatibility to save its state between virtualization hosts that use different generations of processors. The processor compatibility mode now provides enhanced, dynamic capabilities on processors capable of second-level address translation. To learn more about the updated compatibility mode, see [Dynamic processor compatibility mode](../virtualization/hyper-v/manage/dynamic-processor-compatibility-mode.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -906,14 +909,14 @@ You can also use dynamic processor compatibility to save its state between virtu
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
 ### Workgroup clusters
 
 Hyper-V workgroup clusters are a special type of Windows Server Failover Cluster where the Hyper-V cluster nodes aren't members of an Active Directory domain with the ability to live migrate VMs in a workgroup cluster.
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -923,7 +926,7 @@ Hyper-V workgroup clusters are a special type of Windows Server Failover Cluster
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Network ATC
@@ -931,7 +934,7 @@ Hyper-V workgroup clusters are a special type of Windows Server Failover Cluster
 Network ATC streamlines the deployment and management of network configurations for Windows Server 2025 clusters. Network ATC uses an intent-based approach, where users specify their desired intents, such as management, compute, or storage for a network adapter. The deployment is automated based on the intended configuration.
 
 This approach reduces the time, complexity, and errors associated with host networking deployment. It ensures configuration consistency across the cluster and also eliminates configuration drift. To learn more, see [Deploy host networking with Network ATC](/azure/azure-local/deploy/network-atc?tabs=22H2&pivots=windows-server).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -941,7 +944,7 @@ This approach reduces the time, complexity, and errors associated with host netw
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
@@ -950,7 +953,7 @@ This approach reduces the time, complexity, and errors associated with host netw
 With Windows Server 2025, Hyper-V now supports up to 4 petabytes of memory and 2,048 logical processors per host. This increase allows for greater scalability and performance for virtualized workloads.
 
 Windows Server 2025 also supports up to 240 TB of memory and 2,048 virtual processors for generation 2 VMs, providing increased flexibility for running large workloads. To learn more, see [Plan for Hyper-V scalability in Windows Server](../virtualization/hyper-v/plan/plan-hyper-v-scalability-in-windows-server.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -960,7 +963,7 @@ Windows Server 2025 also supports up to 240 TB of memory and 2,048 virtual proce
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
@@ -973,7 +976,7 @@ The following sections describe storage updates.
 Dev Drive now supports block cloning starting with Windows 11 24H2 and Windows Server 2025. Because Dev Drive uses the Resilient File System (ReFS) format, block cloning support provides significant performance benefits when you copy files. With block cloning, the file system can copy a range of file bytes for an application as a low-cost metadata operation instead of performing expensive read-and-write operations to the underlying physical data.
 
 The result is faster completion of file copying, reduced I/O to the underlying storage, and improved storage capacity by enabling multiple files to share the same logical clusters. To learn more, see [Block cloning on ReFS](/windows-server/storage/refs/block-cloning).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -983,13 +986,13 @@ The result is faster completion of file copying, reduced I/O to the underlying s
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Dev Drive
 
 Dev Drive is a storage volume that aims to enhance the performance of crucial developer workloads. Dev Drive uses ReFS technology and incorporates specific file system optimizations to offer greater control over storage volume settings and security. Administrators now have the ability to designate trust, configure antivirus settings, and exercise administrative control over attached filters. To learn more, see [Set up a Dev Drive on Windows 11](/windows/dev-drive).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -999,7 +1002,7 @@ Dev Drive is a storage volume that aims to enhance the performance of crucial de
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
@@ -1007,7 +1010,7 @@ Dev Drive is a storage volume that aims to enhance the performance of crucial de
 
 NVMe is a new standard for fast solid-state drives. NVMe storage performance is optimized in Windows Server 2025. The result is improved performance with an increase in IOPS and a decrease in CPU utilization.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1017,13 +1020,13 @@ NVMe is a new standard for fast solid-state drives. NVMe storage performance is 
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Storage Replica compression
 
 Storage Replica compression reduces the amount of data transferred over the network during replication. To learn more about compression in Storage Replica, see [Storage Replica overview](../storage/storage-replica/storage-replica-overview.md).
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1033,7 +1036,7 @@ Storage Replica compression reduces the amount of data transferred over the netw
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
@@ -1041,7 +1044,7 @@ Storage Replica compression reduces the amount of data transferred over the netw
 
 Storage Replica Enhanced Log helps with log implementation to eliminate the performance costs associated with file system abstractions. Block replication performance is improved. To learn more, see [Storage Replica Enhanced Log](../storage/storage-replica/storage-replica-enhanced-log.md).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1051,14 +1054,14 @@ Storage Replica Enhanced Log helps with log implementation to eliminate the perf
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### ReFS native storage deduplication and compression
 
 ReFS native storage deduplication and compression are techniques used to optimize storage efficiency for both static and active workloads, such as file servers or virtual desktops. To learn more about ReFS deduplication and compression, see [Optimize storage with ReFS deduplication and compression in Azure Local](/azure/azure-local/manage/refs-deduplication-and-compression).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1068,14 +1071,14 @@ ReFS native storage deduplication and compression are techniques used to optimiz
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Thin provisioned volumes
 
 Thin provisioned volumes with Storage Spaces Direct are a way to allocate storage resources more efficiently and avoid costly overallocation by allocating from the pool only when needed in a cluster. You can also convert fixed to thin provisioned volumes. Converting from fixed to thin provisioned volumes returns any unused storage back to the pool for other volumes to use. To learn more about thin provisioned volumes, see [Storage thin provisioning](/azure/azure-local/manage/manage-thin-provisioning-23h2).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1085,14 +1088,14 @@ Thin provisioned volumes with Storage Spaces Direct are a way to allocate storag
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ### Server Message Block
 
 Server Message Block (SMB) is one of the most widely used protocols in networking. SMB provides a reliable way to share files and other resources between devices on your network. Windows Server 2025 includes SMB compression support for the industry standard LZ4 compression algorithm. LZ4 is in addition to SMB's existing support for XPRESS (LZ77), XPRESS Huffman (LZ77+Huffman), LZNT1, and PATTERN_V1.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1102,7 +1105,7 @@ Server Message Block (SMB) is one of the most widely used protocols in networkin
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ## Azure Arc and hybrid
@@ -1128,7 +1131,7 @@ Windows Server Management enabled by Azure Arc offers new benefits to customers 
 
 To learn more about Windows Server Management enabled by Azure Arc and the available benefits, see [Windows Server Management enabled by Azure Arc](/azure/azure-arc/servers/windows-server-management-overview).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1138,7 +1141,7 @@ To learn more about Windows Server Management enabled by Azure Arc and the avail
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ## Software-Defined Networking
@@ -1151,7 +1154,7 @@ Software-Defined Networking (SDN) is an approach to networking that network admi
 - **SDN Multisite**: This feature provides native layer 2 and layer 3 connectivity between applications across two locations without any extra components. With SDN Multisite, applications can move seamlessly without the need to reconfigure the application or networks. It also offers unified network policy management for workloads so that you don't need to update policies when a workload VM moves from one location to another. To learn more, see [What is SDN Multisite?](/azure/azure-local/concepts/sdn-multisite-overview?pivots=windows-server).
 - **Enhanced performance of SDN layer 3 gateways**: Layer 3 gateways achieve higher throughput and reduced CPU cycles. These improvements are enabled by default. Users automatically experience better performance when an SDN gateway layer 3 connection is configured through PowerShell or Windows Admin Center.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1161,7 +1164,7 @@ Software-Defined Networking (SDN) is an approach to networking that network admi
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 
@@ -1171,7 +1174,7 @@ Portability is a crucial aspect of container management and has the ability to s
 
 Portability is a Windows Server feature that users can employ to move container images, and their associated data, between different hosts or environments without requiring any modifications. Users can create a container image on one host and then deploy it on another host without having to worry about compatibility issues. To learn more, see [Portability for containers](/virtualization/windowscontainers/deploy-containers/portability).
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1181,14 +1184,14 @@ Portability is a Windows Server feature that users can employ to move container 
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ## Windows Server Insider Program
 
 The [Windows Server Insider Program](get-started-with-windows-server-insiders-preview.md) provides early access to the latest Windows OS releases for a community of enthusiasts. As a member, you're among the first to try out new ideas and concepts that Microsoft is developing. After you register as a member, you can participate in different release channels. Go to **Start** > **Settings** > **Windows Update** > **Windows Insider Program**.
 
----
+
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
@@ -1198,7 +1201,7 @@ The [Windows Server Insider Program](get-started-with-windows-server-insiders-pr
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | This has not been vetted for NPS use. 
----
+
 
 
 ## Related content
