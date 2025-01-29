@@ -801,7 +801,7 @@ The Remote Mailslot protocol is disabled by default for SMB and for DC Locator p
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This should have been deprecated and no longer in use. This shouldn't effect an NPS deployment. 
 
 
 
@@ -835,11 +835,11 @@ Accelerated Networking (AccelNet) simplifies the management of single root I/O v
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This is not relevant as it is primarily to do with the server being a hyper-v host
 
 
 
@@ -851,11 +851,11 @@ When you create a new VM through Hyper-V Manager, **Generation 2** is now set as
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This is not relevant as it is primarily to do with the server being a hyper-v host 
 
 
 
@@ -867,11 +867,11 @@ Hypervisor-enforced paging translation (HVPT) is a security enhancement to enfor
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This is not relevant as it is primarily to do with the server being a hyper-v host
 
 
 
@@ -885,11 +885,11 @@ GPU-P Live Migration provides a solution to move a VM (for planned downtime or l
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This is not relevant as it is primarily to do with the server being a hyper-v host 
 
 
 
@@ -904,11 +904,11 @@ You can also use dynamic processor compatibility to save its state between virtu
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This is not relevant as it is primarily to do with the server being a hyper-v host
 
 
 
@@ -921,11 +921,11 @@ Hyper-V workgroup clusters are a special type of Windows Server Failover Cluster
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This is not relevant as it is primarily to do with the server being a hyper-v host
 
 
 
@@ -943,8 +943,7 @@ This approach reduces the time, complexity, and errors associated with host netw
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
-
+| Notes: | This is not relevant for an NPS deployment but may need to be verified for DC and Wider Use
 
 
 
@@ -958,12 +957,11 @@ Windows Server 2025 also supports up to 240 TB of memory and 2,048 virtual proce
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
-| Checked.For.WiderUse: | N       |
-| WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
-
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
+| Checked.For.WiderUse: | Y       |
+| WiderUse.No.Risk:     | Y       |
+| Notes: | This doesn't effect anything ; its a complete improvement ability to use more resources.
 
 
 
@@ -981,11 +979,11 @@ The result is faster completion of file copying, reduced I/O to the underlying s
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | New Feature to do with storage has to be opted in for use. Don't believe we use Dev Drives. Need to test for use if needed.
 
 
 
@@ -1001,7 +999,7 @@ Dev Drive is a storage volume that aims to enhance the performance of crucial de
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | New Feature to do with storage has to be opted in for use. Don't believe we use Dev Drives. Need to test for use if needed.
 
 
 
@@ -1015,11 +1013,11 @@ NVMe is a new standard for fast solid-state drives. NVMe storage performance is 
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
 | NPS.No.Risk:          | Y       |
-| Checked.For.DC:       | N       |
-| DC.No.Risk:           | N       |
-| Checked.For.WiderUse: | N       |
-| WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Checked.For.DC:       | Y       |
+| DC.No.Risk:           | Y       |
+| Checked.For.WiderUse: | Y       |
+| WiderUse.No.Risk:     | Y       |
+| Notes: | NVMe compatibility increase better performance no drawback or risk.
 
 
 
@@ -1035,7 +1033,7 @@ Storage Replica compression reduces the amount of data transferred over the netw
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | Maybe necessary for backup safety. However shouldn't effect the NPS Deployment. But for wider use would need confirmation of no side effects.
 
 
 
@@ -1053,7 +1051,7 @@ Storage Replica Enhanced Log helps with log implementation to eliminate the perf
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | Should just be a performance increase. No NPS deployment risk.
 
 
 
@@ -1070,7 +1068,7 @@ ReFS native storage deduplication and compression are techniques used to optimiz
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | Only a problem if used. Confirmation would of safety if we use this feature. NPS no risk.
 
 
 
@@ -1087,7 +1085,7 @@ Thin provisioned volumes with Storage Spaces Direct are a way to allocate storag
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | Shouldn't be relevant for NPS but should be confirmed for Wider Use. Shouldn't be relevant for DC either.
 
 
 
@@ -1104,7 +1102,7 @@ Server Message Block (SMB) is one of the most widely used protocols in networkin
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | Additional Support no risk. Confirm for wider support.
 
 
 
@@ -1140,7 +1138,7 @@ To learn more about Windows Server Management enabled by Azure Arc and the avail
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | We don't use Arc NPS no risk.
 
 
 
@@ -1163,7 +1161,7 @@ Software-Defined Networking (SDN) is an approach to networking that network admi
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | This requires implementation and setup for software based Networking.
 
 
 
@@ -1183,7 +1181,7 @@ Portability is a Windows Server feature that users can employ to move container 
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | No risk to NPS, however we may want to check viability for Wider use. DC also as this may effect user profiles leveraging VHDX.
 
 
 
@@ -1200,7 +1198,7 @@ The [Windows Server Insider Program](get-started-with-windows-server-insiders-pr
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
-| Notes: | This has not been vetted for NPS use. 
+| Notes: | We wont and dont use this feature.
 
 
 
