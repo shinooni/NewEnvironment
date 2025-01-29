@@ -79,7 +79,6 @@ You can now connect mice, keyboards, headsets, audio devices, and more via Bluet
 
 
 ### DTrace
-
 Windows Server 2025 comes equipped with `dtrace` as a native tool. DTrace is a command-line utility that enables users to monitor and troubleshoot their system's performance in real time. With DTrace, you can dynamically instrument both the kernel and user-space code without any need to modify the code itself. This versatile tool supports a range of data collection and analysis techniques, such as aggregations, histograms, and tracing of user-level events. To learn more, see [DTrace](/windows-server/administration/windows-commands/dtrace) for command-line help and [DTrace on Windows](/windows-hardware/drivers/devtest/dtrace) for other capabilities.
 ---
 | What to Check         | Checked |
