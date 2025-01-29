@@ -58,8 +58,8 @@ Notes: Just a feature clarification. No Risk
 
 
 ### Bluetooth
-
 You can now connect mice, keyboards, headsets, audio devices, and more via Bluetooth in Windows Server 2025.
+
 ---
 Checked.For.NPS: Y
 NPS.No.Risk: Y
