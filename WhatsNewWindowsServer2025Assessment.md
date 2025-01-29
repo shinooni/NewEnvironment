@@ -19,15 +19,15 @@ When you upgrade by using Windows Update from the **Settings** dialog, you can p
 To learn more about how to manage the offer of feature updates, see [Manage feature updates with Group Policy on Windows Server](manage-feature-updates-group-policy.md).
 
 | What to Check | Checked
-| :---------------- | ----: |
-| Checked.For.NPS:  | Y     |
-NPS.No.Risk: Y
-Checked.For.DC: N
-DC.No.Risk: N
-Checked.For.WiderUse: N
-WiderUse.No.Risk: N
-Notes: Only for use as NPS. This has not been vetted for anything other than for use with the NPS servers. Wider Use and for use as DCs will need to be checked. This is however a handy feature for intiating an implace upgrade
----
+| :-------------------- | ----: |
+| Checked.For.NPS:      | Y     |
+| NPS.No.Risk:          | Y
+| Checked.For.DC:       | N
+| DC.No.Risk:           | N
+| Checked.For.WiderUse: | N
+| WiderUse.No.Risk:     | N
+| Notes:                | Only for use as NPS. This has not been vetted for anything other than for use with the NPS servers. Wider Use and for use as DCs will need to be checked. This is however a handy feature for intiating an implace upgrade |
+------------------------
 
 ### In-place upgrade from Windows Server 2012 R2
 
