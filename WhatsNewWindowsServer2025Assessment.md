@@ -18,6 +18,7 @@ When you upgrade by using Windows Update from the **Settings** dialog, you can p
 
 To learn more about how to manage the offer of feature updates, see [Manage feature updates with Group Policy on Windows Server](manage-feature-updates-group-policy.md).
 
+| What to Check | Checked
 | :---------------- | ----: |
 | Checked.For.NPS:  | Y     |
 NPS.No.Risk: Y
