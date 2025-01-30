@@ -23,14 +23,14 @@ Hotpatch is now available for Windows Server 2025 machines connected to Azure Ar
 
 | What to Check         | Checked |
 | :-------------------- | ------: |
-| Checked.For.NPS:      | N       |
-| NPS.Risk:             | Y       |
+| Checked.For.NPS:      | Y       |
+| NPS.Risk:             | N       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
 | WiderUse.No.Risk:     | N       |
 | Notes: | If viewing an older AD from the a 2025 machine it may flag as requiring a repair for AD objects. Administrators should not "repair" the object. Specifically "Enterprise administrators can now repair objects with the missing core attributes `SamAccountType` and `ObjectCategory`. Enterprise administrators can reset the `LastLogonTimeStamp` attribute on an object to the current time." This should not be done on a 2025 machine.
-
+| RISK CONFIRMED NON ISSUE| Y|
 
 
 Windows Local Administrator Password Solution (LAPS) helps organizations manage local administrator passwords on their domain-joined computers. It automatically generates unique passwords for each computer's local administrator account. It then stores them securely in Active Directory and updates them regularly. Automatically generated passwords help to improve security. They reduce the risk of attackers gaining access to sensitive systems by using compromised or easily guessable passwords.
@@ -81,7 +81,7 @@ Several features new to Microsoft LAPS introduce the following improvements:
   - **Don't use:** The special characters **,**, **.**, **&**, **{**, **}**, **[**, **]**, **(**, **)**, **;**
   - **Use:** The special characters **:**, **=**, **?**, **\***
 
-  The ADUC snap-in (via Microsoft Management Console) now features an improved Windows LAPS tab. The Windows LAPS password now appears in a new font that enhances its readability when it appears in plain text.
+  #### **The ADUC snap-in (via Microsoft Management Console) now features an improved Windows LAPS tab. The Windows LAPS password now appears in a new font that enhances its readability when it appears in plain text.**
 
 - **Post-authentication action support for terminating individual processes**: A new option is added to the **Post-authentication actions** (PAA) Group Policy setting, `Reset the password, sign out the managed account, and terminate any remaining processes`, which is located in **Computer Configuration** > **Administrative Templates** > **System** > **LAPS** > **Post-authentication actions**.
 
