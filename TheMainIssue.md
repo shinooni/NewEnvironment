@@ -8,7 +8,7 @@ Hotpatch is now available for Windows Server 2025 machines connected to Azure Ar
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | Y       |
-| NPS.No.Risk:          | N       |
+| NPS.Risk:             | Y       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
@@ -24,7 +24,7 @@ Hotpatch is now available for Windows Server 2025 machines connected to Azure Ar
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
-| NPS.No.Risk:          | N       |
+| NPS.Risk:             | Y       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
@@ -94,7 +94,7 @@ To learn more about Windows LAPS, see [What is Windows LAPS?](/windows-server/id
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
-| NPS.No.Risk:          | N       |
+| NPS.Risk:             | Y       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
@@ -141,7 +141,7 @@ ________________________________
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
-| NPS.No.Risk:          | N       |
+| NPS.Risk:             | Y       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
@@ -156,7 +156,7 @@ By implementing a customized security baseline, you can establish security measu
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
-| NPS.No.Risk:          | N       |
+| NPS.Risk:             | Y       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
@@ -172,7 +172,7 @@ SMB signing is now required by default for all SMB outbound connections. Previou
 | What to Check         | Checked |
 | :-------------------- | ------: |
 | Checked.For.NPS:      | N       |
-| NPS.No.Risk:          | N       |
+| NPS.Risk:             | Y       |
 | Checked.For.DC:       | N       |
 | DC.No.Risk:           | N       |
 | Checked.For.WiderUse: | N       |
